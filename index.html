@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <script src="https://kit.fontawesome.com/f25c563aa6.js" crossorigin="anonymous"></script>
+    <script src="scripts/indexScript.js"></script>
+    <title>Rashad portfolio website</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="nav-container">
+            <nav>
+                <img class="logo" src="images/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <span class="close" onclick="closeMenu()"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                </ul>
+                <span class="menu" onclick="openMenu()"><i class="fa-solid fa-bars"></i></span>
+            </nav>
+        </div>
+
+        <div class="hero-container">
+            <div class="intro-section">
+                Hi, My name is <span class="my-name">Rashad</span>
+                <div class="profession">I am a passionate</div>
+                <div>Web Developer</div>
+                <span id="element"></span>
+                <div class="btn-container mt-1">
+                    <a class="btn" href="files/Rashadmiya's curriculum vitae.pdf" download>Download Resume</a>
+                    <a class="btn">Visit Github</a>
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="images/resized.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+        <div class="about-container">
+            <div class="col-1">
+                <img src="images/resized.png" alt="">
+            </div>
+            <div class="col-2">
+                <h1 class="section-title">About Me</h1>
+                <p class="my-1 service-details line-height-regular">Hello! I'm Rashad Miya, a dedicated and passionate
+                    Web and Mobile App Developer with
+                    expertise in ReactJS, Next.js, and React Native. With 2 years of experience in the field, I have
+                    honed my skills in creating robust and user-friendly applications for both web and mobile platforms.
+                    My commitment to delivering high-quality solutions coupled with my enthusiasm for staying updated
+                    with the latest technologies drive me to excel in every project I undertake.</p>
+
+                <div class="tab-titles mt-2">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span class="tabs-content-title">UI/UX</span><br>Designing web/app interfaces</li>
+                        <li><span class="tabs-content-title">Web Development</span><br>Develop web application using
+                            React.js, Next.js</li>
+                        <li><span class="tabs-content-title">App Development</span><br>Buil cross platfrom mobile
+                            apps using React Native</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span class="tabs-content-title">2023 - Current</span><br>Junior Web Developer At
+                            Gotweet</li>
+                    </ul>
+                    <ul>
+                        <li><span class="tabs-content-title">2022 - 2023</span><br>React Native Developer at
+                            BKFlowers</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span class="tabs-content-title">Passing Year - 2018</span><br>Bachelor of Science in
+                            Computer Science and Engineering from
+                            Daffodill International University.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+    <div id="services">
+        <div class="service-container">
+            <h1 class="section-title py-1">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <div>
+                        <h3 class="title pb-1">Design</h3>
+                        <p class="sub-title"><span class="headline">Technology:</span> HTML, HTML5</p>
+                        <p class="sub-title"><span class="headline">CSS:</span> Tailwind, Bootstrap, CSS3</p>
+                    </div>
+                    <p class="service-details line-height-regular">I am specialize in creating and structuring web
+                        content using
+                        Hypertext Markup Language (HTML). i am able to design and implement the layout,
+                        formatting, and structure of web pages,
+                        ensuring they are visually appealing and functional across various platforms and
+                        devices.
+                    </p>
+                    <a href="#" class="see-more">see more</a>
+                </div>
+
+                <div>
+                    <div>
+                        <h3 class="title pb-1">Frontend</h3>
+                        <p class="sub-title"><span class="headline">Framework / Library:</span> ReactJS, NextJS,
+                            Vanilla
+                            JS</p>
+                    </div>
+                    <p class="service-details line-height-regular">As an experienced frontend developer proficient in
+                        React.js, Next.js and
+                        vanilla
+                        JavaScript,
+                        I specialize in crafting dynamic and intuitive user interfaces for websites and web
+                        applications. With a focus on seamless functionality and engaging user experiences,
+                        I ensure compatibility across various platforms and devices.
+                    </p>
+                    <a href="#" class="see-more">see more</a>
+                </div>
+
+                <div>
+                    <div>
+                        <h3 class="title pb-1">Backend</h3>
+                        <p class="sub-title"><span class="headline">Technology:</span> Node.js, Express.js and Firebase.
+                        </p>
+                        <p class="sub-title"><span class="headline">Database:</span> MongoDB, Firebase Database</p>
+                    </div>
+                    <p class="service-details line-height-regular">
+                        I specialize in crafting robust backend solutions using Node.js with Express.js and
+                        Firebase.
+                        I build scalable APIs and handle server-side logic efficiently.
+                        With Express.js, I ensure seamless routing and middleware integration for smooth
+                        request handling.
+                        Additionally, I utilize Firebase for real-time database management, authentication,
+                        and hosting,
+                    </p>
+                    <a href="#" class="see-more">see more</a>
+                </div>
+
+                <div>
+                    <div>
+                        <h3 class="title pb-1">Mobile Development</h3>
+                        <p class="sub-title"><span class="headline">Technology:</span> React Native</p>
+                        <p class="sub-title"> <span class="headline">Styles:</span> Vanilla styles, Tailwind</p>
+                    </div>
+                    <p class="service-details line-height-regular">
+                        As an experienced React Native developer,
+                        I specialize in crafting mobile applications for both iOS and Android platforms.
+                        Leveraging my expertise in React.js and native mobile development,
+                        I create high-performance apps with seamless user experiences.
+                        My focus is on delivering efficient,
+                        high-performance apps with native-like user experiences.
+                    </p>
+                    <a href="#" class="see-more">see more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio section -->
+    <div id="portfolio">
+        <div class="portfolio-container">
+            <h1 class="section-title py-1">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3 class="title">Gootweet | Social Marketplace</h3>
+                        <p class="py-1 service-details line-height-regular">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                            Inventore delectus, praesentium
+                            blanditiis provident, obcaecati rerum, dolorum doloribus rem sunt quas nisi ipsum ut fugit
+                            molestias! Tempora voluptate repellendus qui quasi!</p>
+                        <a href="">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3 class="title">Bongobazar | E-commerce Marketplace</h3>
+                        <p class="py-1 service-details line-height-regular">Bongobazar is a comprehensive
+                            online marketplace built with ReactJS, offering a modern and intuitive shopping experience
+                            for users. This platform integrates advanced features such as product catalog management,
+                            user authentication, secure transactions, and order tracking. the website ensures high performance and responsiveness across various devices,
+                            providing users with seamless access to a wide range of products from different categories
+                        </p>
+                        <a href="">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3 class="title">BkFlowers | Mobile Apps</h3>
+                        <p class="py-1 service-details line-height-regular ">Developed a cross-platform mobile
+                            application for flower shop
+                            using React Native. Implemented features such as user authentication, offline data
+                            storage,payment system integration and push notifications</p>
+                        <!-- <p>Technologies Used: React Native, Expo, Firebase (Authentication, Firestore), AsyncStorage</p> -->
+                        <a href="">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="see-more">See more</a>
+        </div>
+    </div>
+
+    <!-- contact section -->
+    <div id="contact">
+        <div class="contact-container">
+            <h1 class="section-title pb-1">My Contact</h1>
+            <div class="contact-row flex w-full justify-between">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p> <i class="fa-regular fa-envelope"></i> rashadmiya@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> 01745221040</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/md-rashad-miya-52b691196/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/rashad.dulal">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/rashad_dulal">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/rashaddulal/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <h1 class="title">Place a Message to Me</h1>
+                    <form class="flex flex-col">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button class="submit my-1" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright mt-2">
+        Copyright &copy;Rashad Miya
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Skill includes: React.js, React Native, Next.js, Node.js, Express.js.'],
+            typeSpeed: 100,
+
+        });
+    </script>
+</body>
+
+</html>
