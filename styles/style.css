@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,11 +7,14 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+    transition: 5s;
+}
+
 body {
     background-color: #080808;
     color: white;
-    scroll-behavior: smooth;
-    transition: scroll .5s;
 }
 
 #header {
@@ -31,7 +35,7 @@ body {
 }
 
 .nav-container {
-    padding: 1rem 5rem;
+    padding: 0 5rem;
 }
 
 .hero-container {
@@ -76,7 +80,9 @@ nav {
 }
 
 .logo {
-    width: 140px;
+    width: 80px;
+    transform: scale(2);
+    color: #fff;
 }
 
 nav ul li {
@@ -90,6 +96,8 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     position: relative;
+
+
 }
 
 nav ul li a::after {
@@ -115,13 +123,14 @@ nav ul li a:hover::after {
     margin: 5rem 0;
 }
 
-.right-section{
+.right-section {
     max-width: 40%;
     width: 30%;
     display: flex;
     justify-content: flex-end;
     height: 80%;
 }
+
 .right-section img {
     width: 100%;
 }
@@ -425,7 +434,7 @@ form textarea {
     background-color: #262626;
     text-align: center;
     padding: 2rem 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
 
 }
@@ -440,7 +449,7 @@ form textarea {
 
 @media only screen and (max-width:600px) {
     .nav-container {
-        padding: 1rem;
+        padding: 0 1rem;
     }
 
     .hero-container {
@@ -492,7 +501,7 @@ form textarea {
         width: 70%;
         height: 100%;
         padding-top: 2rem;
-        background-color: #ababab;
+        background-color: #302e2e;
         z-index: 2;
         transition: right 0.5s;
     }
@@ -522,7 +531,8 @@ form textarea {
         font-size: 2rem;
         margin: 2rem 0;
     }
-    .right-section{
+
+    .right-section {
         display: none;
     }
 
@@ -558,12 +568,12 @@ form textarea {
         flex-direction: column;
     }
 
-    .contact-left{
+    .contact-left {
         align-self: self-start;
         width: 100%;
     }
 
-    .social-links{
+    .social-links {
         padding: 2rem 0;
         width: fit-content;
         margin: auto;
