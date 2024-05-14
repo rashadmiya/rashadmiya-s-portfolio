@@ -17,11 +17,11 @@
             <nav>
                 <img class="logo" src="images/logor.png" alt="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#header" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                     <span class="close" onclick="closeMenu()"><i class="fa-regular fa-circle-xmark"></i></span>
 
                 </ul>
@@ -279,6 +279,23 @@
             strings: ['Skill includes: React.js, React Native, Next.js, Node.js, Express.js.'],
             typeSpeed: 100,
 
+        });
+    </script>
+    <script>
+
+        function handleNavLinkClick(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            document.getElementById(targetId).scrollIntoView({
+                behavior: "smooth"
+            });
+            let sideMenu = document.getElementById('sidemenu');
+            sideMenu.style.right = "-70%"
+        }
+
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach(link => {
+            link.addEventListener("click", handleNavLinkClick);
         });
     </script>
 </body>
